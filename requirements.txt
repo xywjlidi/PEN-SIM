@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9966f59bed5c3d55577d4161ae85b302911a16d21f705e48d6dbbe3792a31509
-size 106
+numpy==1.21.3
+libtiff==0.4.2
+tifffile
+scipy==1.7.3
+matplotlib
+torch==1.8.0+cu111
+torchvision==0.9.0+cu111
