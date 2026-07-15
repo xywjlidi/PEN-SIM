@@ -1,0 +1,329 @@
+{'type': 'base', 'env_name': 'TFM/UNet_localization3d_out2_b100_a0.01_min2_up3_20230411_refix_retrain', 'arch': 'UNet_3D_up3', 'resume': False, 'device': 'cuda:1', 'train_dir': './data/TrainData_488_1.41rNA_300nmbeads/train', 'val_dir': './data/TrainData_488_1.41rNA_300nmbeads/val', 'haslabel': False, 'gt_dir': '0.3beads_20230411_refix_nc_position', 'input_dir': 'TIRF560_0.1beads_20230411_3D_refix', 'upfactor': 3, 'zupfactor': 1, 'img_type': '.tif', 'normal': True, 'input_img_neg': False, 'img_frame': 0, 'is3D': True, 'dataset': 'Dataset_3dnt_augment_eachit_extend_baseline', 'rotate': False, 'rotate90': True, 'flip': True, 'frontground_filter': False, 'OTF_path': './data/OTF/OTF.mat', 'penalty': 'l1norm', 'alpha': 0.01, 'kernel': 'gauss', 'kernel_size': 25, 'dxy': 25, 'sigma': 8, 'sigma_min': 2, 'change_step': 3000, 'gamma': 0.9, 'augment_size': 20000, 'val_augment_size': 500, 'noise_crop': 64, 'clean_crop': 192, 'crop_depth': 8, 'nepoch': 50, 'batch_size': 4, 'scheduler': 'steplr', 'decay_step': 15, 'lr': 0.0001, 'warmup': True, 'warmup_iter': 10000, 'val_checkpoint': 300, 'save_checkpoint': 2500, 'save_img': '1.tif', 'split_test': 1, 'normal_max': 0.999, 'normal_min': 0.1}env: TFM/UNet_localization3d_out2_b100_a0.01_min2_up3_20230411_refix_retrain train: ./data/TrainData_488_1.41rNA_300nmbeads/train val: ./data/TrainData_488_1.41rNA_300nmbeads/valstart train...Ep 1 it 300  	PSNR: 5.2838	Val Loss: 8.9633			best_ep 1	best_it 300	best_psnr 5.2838
+Ep 1 it 600  	PSNR: 6.9019	Val Loss: 6.1182			best_ep 1	best_it 600	best_psnr 6.9019
+Ep 1 it 900  	PSNR: 9.4383	Val Loss: 5.0762			best_ep 1	best_it 900	best_psnr 9.4383
+Ep 1 it 1200  	PSNR: 10.4009	Val Loss: 5.0688			best_ep 1	best_it 1200	best_psnr 10.4009
+Ep 1 it 1500  	PSNR: 11.7639	Val Loss: 4.7082			best_ep 1	best_it 1500	best_psnr 11.7639
+Ep 1 it 1800  	PSNR: 11.3370	Val Loss: 4.7078			best_ep 1	best_it 1500	best_psnr 11.7639
+Ep 1 it 2100  	PSNR: 12.4408	Val Loss: 4.3444			best_ep 1	best_it 2100	best_psnr 12.4408
+Ep 1 it 2400  	PSNR: 13.1938	Val Loss: 4.2781			best_ep 1	best_it 2400	best_psnr 13.1938
+Ep 1 it 2700  	PSNR: 12.8835	Val Loss: 4.2225			best_ep 1	best_it 2400	best_psnr 13.1938
+Ep 1 it 3000  	PSNR: 13.1885	Val Loss: 4.3789			best_ep 1	best_it 2400	best_psnr 13.1938
+change sigma to: 7.2Ep 1 it 3300  	PSNR: 14.6904	Val Loss: 3.9421			best_ep 1	best_it 3300	best_psnr 14.6904
+Ep 1 it 3600  	PSNR: 15.1480	Val Loss: 3.9008			best_ep 1	best_it 3600	best_psnr 15.1480
+Ep 1 it 3900  	PSNR: 14.0873	Val Loss: 4.0112			best_ep 1	best_it 3600	best_psnr 15.1480
+Ep 1 it 4200  	PSNR: 16.0679	Val Loss: 3.9089			best_ep 1	best_it 4200	best_psnr 16.0679
+Ep 1 it 4500  	PSNR: 15.1995	Val Loss: 4.0868			best_ep 1	best_it 4200	best_psnr 16.0679
+Ep 1 it 4800  	PSNR: 15.6913	Val Loss: 3.9343			best_ep 1	best_it 4200	best_psnr 16.0679
+-----------------
+Epoch: 1	Time: 2919.7449	LearningRate: 0.0001000
+-----------------
+Ep 2 it 5100  	PSNR: 15.9718	Val Loss: 3.8036			best_ep 1	best_it 4200	best_psnr 16.0679
+Ep 2 it 5400  	PSNR: 15.7487	Val Loss: 4.0408			best_ep 1	best_it 4200	best_psnr 16.0679
+Ep 2 it 5700  	PSNR: 16.8103	Val Loss: 3.9032			best_ep 2	best_it 5700	best_psnr 16.8103
+Ep 2 it 6000  	PSNR: 17.1281	Val Loss: 3.9392			best_ep 2	best_it 6000	best_psnr 17.1281
+change sigma to: 6.48Ep 2 it 6300  	PSNR: 17.8177	Val Loss: 3.4606			best_ep 2	best_it 6300	best_psnr 17.8177
+Ep 2 it 6600  	PSNR: 18.3794	Val Loss: 3.5935			best_ep 2	best_it 6600	best_psnr 18.3794
+Ep 2 it 6900  	PSNR: 18.6279	Val Loss: 3.4880			best_ep 2	best_it 6900	best_psnr 18.6279
+Ep 2 it 7200  	PSNR: 18.4363	Val Loss: 3.4187			best_ep 2	best_it 6900	best_psnr 18.6279
+Ep 2 it 7500  	PSNR: 18.5680	Val Loss: 3.5171			best_ep 2	best_it 6900	best_psnr 18.6279
+Ep 2 it 7800  	PSNR: 18.8123	Val Loss: 3.3701			best_ep 2	best_it 7800	best_psnr 18.8123
+Ep 2 it 8100  	PSNR: 18.7872	Val Loss: 3.4032			best_ep 2	best_it 7800	best_psnr 18.8123
+Ep 2 it 8400  	PSNR: 18.7755	Val Loss: 3.3665			best_ep 2	best_it 7800	best_psnr 18.8123
+Ep 2 it 8700  	PSNR: 19.2315	Val Loss: 3.5986			best_ep 2	best_it 8700	best_psnr 19.2315
+Ep 2 it 9000  	PSNR: 19.6593	Val Loss: 3.4251			best_ep 2	best_it 9000	best_psnr 19.6593
+change sigma to: 5.832000000000001Ep 2 it 9300  	PSNR: 19.6572	Val Loss: 3.1192			best_ep 2	best_it 9000	best_psnr 19.6593
+Ep 2 it 9600  	PSNR: 20.2123	Val Loss: 3.1926			best_ep 2	best_it 9600	best_psnr 20.2123
+Ep 2 it 9900  	PSNR: 20.6015	Val Loss: 3.0915			best_ep 2	best_it 9900	best_psnr 20.6015
+-----------------
+Epoch: 2	Time: 3081.7763	LearningRate: 0.0001000
+-----------------
+Ep 3 it 10200  	PSNR: 20.5559	Val Loss: 3.1485			best_ep 2	best_it 9900	best_psnr 20.6015
+Ep 3 it 10500  	PSNR: 20.6212	Val Loss: 3.1141			best_ep 3	best_it 10500	best_psnr 20.6212
+Ep 3 it 10800  	PSNR: 20.1001	Val Loss: 3.1538			best_ep 3	best_it 10500	best_psnr 20.6212
+Ep 3 it 11100  	PSNR: 20.2254	Val Loss: 3.1131			best_ep 3	best_it 10500	best_psnr 20.6212
+Ep 3 it 11400  	PSNR: 20.4953	Val Loss: 3.0447			best_ep 3	best_it 10500	best_psnr 20.6212
+Ep 3 it 11700  	PSNR: 20.0716	Val Loss: 2.9869			best_ep 3	best_it 10500	best_psnr 20.6212
+Ep 3 it 12000  	PSNR: 20.4166	Val Loss: 3.1055			best_ep 3	best_it 10500	best_psnr 20.6212
+change sigma to: 5.248800000000001Ep 3 it 12300  	PSNR: 20.8451	Val Loss: 2.7709			best_ep 3	best_it 12300	best_psnr 20.8451
+Ep 3 it 12600  	PSNR: 21.2223	Val Loss: 2.7833			best_ep 3	best_it 12600	best_psnr 21.2223
+Ep 3 it 12900  	PSNR: 20.9368	Val Loss: 2.7802			best_ep 3	best_it 12600	best_psnr 21.2223
+Ep 3 it 13200  	PSNR: 21.0557	Val Loss: 2.8623			best_ep 3	best_it 12600	best_psnr 21.2223
+Ep 3 it 13500  	PSNR: 21.8713	Val Loss: 2.9478			best_ep 3	best_it 13500	best_psnr 21.8713
+Ep 3 it 13800  	PSNR: 21.4132	Val Loss: 2.7637			best_ep 3	best_it 13500	best_psnr 21.8713
+Ep 3 it 14100  	PSNR: 21.9665	Val Loss: 2.7400			best_ep 3	best_it 14100	best_psnr 21.9665
+Ep 3 it 14400  	PSNR: 21.6590	Val Loss: 2.9581			best_ep 3	best_it 14100	best_psnr 21.9665
+Ep 3 it 14700  	PSNR: 21.0072	Val Loss: 2.7895			best_ep 3	best_it 14100	best_psnr 21.9665
+Ep 3 it 15000  	PSNR: 21.5130	Val Loss: 2.8032			best_ep 3	best_it 14100	best_psnr 21.9665
+change sigma to: 4.7239200000000015-----------------
+Epoch: 3	Time: 3079.4282	LearningRate: 0.0001000
+-----------------
+Ep 4 it 15300  	PSNR: 22.3248	Val Loss: 2.5915			best_ep 4	best_it 15300	best_psnr 22.3248
+Ep 4 it 15600  	PSNR: 22.1078	Val Loss: 2.6011			best_ep 4	best_it 15300	best_psnr 22.3248
+Ep 4 it 15900  	PSNR: 22.9093	Val Loss: 2.5269			best_ep 4	best_it 15900	best_psnr 22.9093
+Ep 4 it 16200  	PSNR: 21.9964	Val Loss: 2.6099			best_ep 4	best_it 15900	best_psnr 22.9093
+Ep 4 it 16500  	PSNR: 22.5220	Val Loss: 2.5239			best_ep 4	best_it 15900	best_psnr 22.9093
+Ep 4 it 16800  	PSNR: 22.7426	Val Loss: 2.7922			best_ep 4	best_it 15900	best_psnr 22.9093
+Ep 4 it 17100  	PSNR: 22.1389	Val Loss: 2.5143			best_ep 4	best_it 15900	best_psnr 22.9093
+Ep 4 it 17400  	PSNR: 22.8294	Val Loss: 2.5440			best_ep 4	best_it 15900	best_psnr 22.9093
+Ep 4 it 17700  	PSNR: 22.3305	Val Loss: 2.7377			best_ep 4	best_it 15900	best_psnr 22.9093
+Ep 4 it 18000  	PSNR: 20.8204	Val Loss: 2.5563			best_ep 4	best_it 15900	best_psnr 22.9093
+change sigma to: 4.251528000000001Ep 4 it 18300  	PSNR: 23.6433	Val Loss: 2.2525			best_ep 4	best_it 18300	best_psnr 23.6433
+Ep 4 it 18600  	PSNR: 24.1892	Val Loss: 2.3457			best_ep 4	best_it 18600	best_psnr 24.1892
+Ep 4 it 18900  	PSNR: 23.8705	Val Loss: 2.2168			best_ep 4	best_it 18600	best_psnr 24.1892
+Ep 4 it 19200  	PSNR: 23.8967	Val Loss: 2.2826			best_ep 4	best_it 18600	best_psnr 24.1892
+Ep 4 it 19500  	PSNR: 23.6099	Val Loss: 2.3759			best_ep 4	best_it 18600	best_psnr 24.1892
+Ep 4 it 19800  	PSNR: 23.4973	Val Loss: 2.3529			best_ep 4	best_it 18600	best_psnr 24.1892
+-----------------
+Epoch: 4	Time: 3046.4298	LearningRate: 0.0001000
+-----------------
+Ep 5 it 20100  	PSNR: 23.9941	Val Loss: 2.3122			best_ep 4	best_it 18600	best_psnr 24.1892
+Ep 5 it 20400  	PSNR: 23.9423	Val Loss: 2.2727			best_ep 4	best_it 18600	best_psnr 24.1892
+Ep 5 it 20700  	PSNR: 24.7621	Val Loss: 2.3633			best_ep 5	best_it 20700	best_psnr 24.7621
+Ep 5 it 21000  	PSNR: 21.6665	Val Loss: 2.4027			best_ep 5	best_it 20700	best_psnr 24.7621
+change sigma to: 3.826375200000001Ep 5 it 21300  	PSNR: 24.2261	Val Loss: 2.0507			best_ep 5	best_it 20700	best_psnr 24.7621
+Ep 5 it 21600  	PSNR: 24.8106	Val Loss: 2.0256			best_ep 5	best_it 21600	best_psnr 24.8106
+Ep 5 it 21900  	PSNR: 25.0865	Val Loss: 2.0689			best_ep 5	best_it 21900	best_psnr 25.0865
+Ep 5 it 22200  	PSNR: 25.1124	Val Loss: 2.0795			best_ep 5	best_it 22200	best_psnr 25.1124
+Ep 5 it 22500  	PSNR: 26.1183	Val Loss: 2.0814			best_ep 5	best_it 22500	best_psnr 26.1183
+Ep 5 it 22800  	PSNR: 25.1248	Val Loss: 2.0227			best_ep 5	best_it 22500	best_psnr 26.1183
+Ep 5 it 23100  	PSNR: 24.8066	Val Loss: 2.0683			best_ep 5	best_it 22500	best_psnr 26.1183
+Ep 5 it 23400  	PSNR: 24.8819	Val Loss: 2.1106			best_ep 5	best_it 22500	best_psnr 26.1183
+Ep 5 it 23700  	PSNR: 23.2650	Val Loss: 2.0387			best_ep 5	best_it 22500	best_psnr 26.1183
+Ep 5 it 24000  	PSNR: 23.9684	Val Loss: 2.0206			best_ep 5	best_it 22500	best_psnr 26.1183
+change sigma to: 3.4437376800000012Ep 5 it 24300  	PSNR: 25.5268	Val Loss: 1.9234			best_ep 5	best_it 22500	best_psnr 26.1183
+Ep 5 it 24600  	PSNR: 26.2875	Val Loss: 1.8668			best_ep 5	best_it 24600	best_psnr 26.2875
+Ep 5 it 24900  	PSNR: 26.4802	Val Loss: 1.8442			best_ep 5	best_it 24900	best_psnr 26.4802
+-----------------
+Epoch: 5	Time: 3086.1510	LearningRate: 0.0001000
+-----------------
+Ep 6 it 25200  	PSNR: 26.8421	Val Loss: 1.8484			best_ep 6	best_it 25200	best_psnr 26.8421
+Ep 6 it 25500  	PSNR: 26.8801	Val Loss: 1.8064			best_ep 6	best_it 25500	best_psnr 26.8801
+Ep 6 it 25800  	PSNR: 26.3019	Val Loss: 1.9307			best_ep 6	best_it 25500	best_psnr 26.8801
+Ep 6 it 26100  	PSNR: 27.1797	Val Loss: 1.8380			best_ep 6	best_it 26100	best_psnr 27.1797
+Ep 6 it 26400  	PSNR: 27.2393	Val Loss: 1.8766			best_ep 6	best_it 26400	best_psnr 27.2393
+Ep 6 it 26700  	PSNR: 26.2647	Val Loss: 1.9040			best_ep 6	best_it 26400	best_psnr 27.2393
+Ep 6 it 27000  	PSNR: 26.1772	Val Loss: 1.8703			best_ep 6	best_it 26400	best_psnr 27.2393
+change sigma to: 3.099363912000001Ep 6 it 27300  	PSNR: 28.1685	Val Loss: 1.6366			best_ep 6	best_it 27300	best_psnr 28.1685
+Ep 6 it 27600  	PSNR: 27.5529	Val Loss: 1.7096			best_ep 6	best_it 27300	best_psnr 28.1685
+Ep 6 it 27900  	PSNR: 27.7063	Val Loss: 1.7020			best_ep 6	best_it 27300	best_psnr 28.1685
+Ep 6 it 28200  	PSNR: 28.1732	Val Loss: 1.6783			best_ep 6	best_it 28200	best_psnr 28.1732
+Ep 6 it 28500  	PSNR: 27.7714	Val Loss: 1.7211			best_ep 6	best_it 28200	best_psnr 28.1732
+Ep 6 it 28800  	PSNR: 28.1806	Val Loss: 1.6446			best_ep 6	best_it 28800	best_psnr 28.1806
+Ep 6 it 29100  	PSNR: 27.6660	Val Loss: 1.6687			best_ep 6	best_it 28800	best_psnr 28.1806
+Ep 6 it 29400  	PSNR: 26.7101	Val Loss: 1.6357			best_ep 6	best_it 28800	best_psnr 28.1806
+Ep 6 it 29700  	PSNR: 27.0876	Val Loss: 1.6588			best_ep 6	best_it 28800	best_psnr 28.1806
+Ep 6 it 30000  	PSNR: 28.7272	Val Loss: 1.6223			best_ep 6	best_it 30000	best_psnr 28.7272
+change sigma to: 2.7894275208000012-----------------
+Epoch: 6	Time: 3090.1157	LearningRate: 0.0001000
+-----------------
+Ep 7 it 30300  	PSNR: 28.5210	Val Loss: 1.5061			best_ep 6	best_it 30000	best_psnr 28.7272
+Ep 7 it 30600  	PSNR: 28.4220	Val Loss: 1.4891			best_ep 6	best_it 30000	best_psnr 28.7272
+Ep 7 it 30900  	PSNR: 27.7004	Val Loss: 1.4951			best_ep 6	best_it 30000	best_psnr 28.7272
+Ep 7 it 31200  	PSNR: 28.7039	Val Loss: 1.5240			best_ep 6	best_it 30000	best_psnr 28.7272
+Ep 7 it 31500  	PSNR: 27.8366	Val Loss: 1.4914			best_ep 6	best_it 30000	best_psnr 28.7272
+Ep 7 it 31800  	PSNR: 27.7624	Val Loss: 1.4771			best_ep 6	best_it 30000	best_psnr 28.7272
+Ep 7 it 32100  	PSNR: 28.0635	Val Loss: 1.4929			best_ep 6	best_it 30000	best_psnr 28.7272
+Ep 7 it 32400  	PSNR: 28.2755	Val Loss: 1.4787			best_ep 6	best_it 30000	best_psnr 28.7272
+Ep 7 it 32700  	PSNR: 28.6267	Val Loss: 1.4750			best_ep 6	best_it 30000	best_psnr 28.7272
+Ep 7 it 33000  	PSNR: 28.5360	Val Loss: 1.4633			best_ep 6	best_it 30000	best_psnr 28.7272
+change sigma to: 2.5104847687200014Ep 7 it 33300  	PSNR: 28.6601	Val Loss: 1.3265			best_ep 6	best_it 30000	best_psnr 28.7272
+Ep 7 it 33600  	PSNR: 28.6186	Val Loss: 1.3270			best_ep 6	best_it 30000	best_psnr 28.7272
+Ep 7 it 33900  	PSNR: 28.4555	Val Loss: 1.3865			best_ep 6	best_it 30000	best_psnr 28.7272
+Ep 7 it 34200  	PSNR: 28.7367	Val Loss: 1.3578			best_ep 7	best_it 34200	best_psnr 28.7367
+Ep 7 it 34500  	PSNR: 28.7645	Val Loss: 1.3888			best_ep 7	best_it 34500	best_psnr 28.7645
+Ep 7 it 34800  	PSNR: 28.9226	Val Loss: 1.3177			best_ep 7	best_it 34800	best_psnr 28.9226
+-----------------
+Epoch: 7	Time: 3042.6652	LearningRate: 0.0001000
+-----------------
+Ep 8 it 35100  	PSNR: 28.9468	Val Loss: 1.3130			best_ep 8	best_it 35100	best_psnr 28.9468
+Ep 8 it 35400  	PSNR: 28.9560	Val Loss: 1.3527			best_ep 8	best_it 35400	best_psnr 28.9560
+Ep 8 it 35700  	PSNR: 28.9070	Val Loss: 1.3543			best_ep 8	best_it 35400	best_psnr 28.9560
+Ep 8 it 36000  	PSNR: 28.9390	Val Loss: 1.3443			best_ep 8	best_it 35400	best_psnr 28.9560
+change sigma to: 2.2594362918480013Ep 8 it 36300  	PSNR: 29.0180	Val Loss: 1.2322			best_ep 8	best_it 36300	best_psnr 29.0180
+Ep 8 it 36600  	PSNR: 29.0127	Val Loss: 1.2139			best_ep 8	best_it 36300	best_psnr 29.0180
+Ep 8 it 36900  	PSNR: 29.2371	Val Loss: 1.1788			best_ep 8	best_it 36900	best_psnr 29.2371
+Ep 8 it 37200  	PSNR: 29.0050	Val Loss: 1.2437			best_ep 8	best_it 36900	best_psnr 29.2371
+Ep 8 it 37500  	PSNR: 28.2556	Val Loss: 1.2187			best_ep 8	best_it 36900	best_psnr 29.2371
+Ep 8 it 37800  	PSNR: 28.5130	Val Loss: 1.1926			best_ep 8	best_it 36900	best_psnr 29.2371
+Ep 8 it 38100  	PSNR: 29.0094	Val Loss: 1.1814			best_ep 8	best_it 36900	best_psnr 29.2371
+Ep 8 it 38400  	PSNR: 28.8585	Val Loss: 1.2431			best_ep 8	best_it 36900	best_psnr 29.2371
+Ep 8 it 38700  	PSNR: 29.2241	Val Loss: 1.2001			best_ep 8	best_it 36900	best_psnr 29.2371
+Ep 8 it 39000  	PSNR: 29.0356	Val Loss: 1.2072			best_ep 8	best_it 36900	best_psnr 29.2371
+change sigma to: 2.033492662663201Ep 8 it 39300  	PSNR: 29.1758	Val Loss: 1.0985			best_ep 8	best_it 36900	best_psnr 29.2371
+Ep 8 it 39600  	PSNR: 29.2008	Val Loss: 1.0925			best_ep 8	best_it 36900	best_psnr 29.2371
+Ep 8 it 39900  	PSNR: 29.2037	Val Loss: 1.0903			best_ep 8	best_it 36900	best_psnr 29.2371
+-----------------
+Epoch: 8	Time: 3062.7550	LearningRate: 0.0001000
+-----------------
+Ep 9 it 40200  	PSNR: 29.1958	Val Loss: 1.0840			best_ep 8	best_it 36900	best_psnr 29.2371
+Ep 9 it 40500  	PSNR: 28.9648	Val Loss: 1.1051			best_ep 8	best_it 36900	best_psnr 29.2371
+Ep 9 it 40800  	PSNR: 29.2342	Val Loss: 1.0784			best_ep 8	best_it 36900	best_psnr 29.2371
+Ep 9 it 41100  	PSNR: 29.2702	Val Loss: 1.0932			best_ep 9	best_it 41100	best_psnr 29.2702
+Ep 9 it 41400  	PSNR: 29.0903	Val Loss: 1.1040			best_ep 9	best_it 41100	best_psnr 29.2702
+Ep 9 it 41700  	PSNR: 29.1213	Val Loss: 1.1067			best_ep 9	best_it 41100	best_psnr 29.2702
+Ep 9 it 42000  	PSNR: 29.0690	Val Loss: 1.1116			best_ep 9	best_it 41100	best_psnr 29.2702
+change sigma to: 2Ep 9 it 42300  	PSNR: 29.0560	Val Loss: 1.1017			best_ep 9	best_it 41100	best_psnr 29.2702
+Ep 9 it 42600  	PSNR: 29.1973	Val Loss: 1.0638			best_ep 9	best_it 41100	best_psnr 29.2702
+Ep 9 it 42900  	PSNR: 29.2914	Val Loss: 1.0578			best_ep 9	best_it 42900	best_psnr 29.2914
+Ep 9 it 43200  	PSNR: 29.2190	Val Loss: 1.0884			best_ep 9	best_it 42900	best_psnr 29.2914
+Ep 9 it 43500  	PSNR: 29.0791	Val Loss: 1.0953			best_ep 9	best_it 42900	best_psnr 29.2914
+Ep 9 it 43800  	PSNR: 29.1122	Val Loss: 1.1042			best_ep 9	best_it 42900	best_psnr 29.2914
+Ep 9 it 44100  	PSNR: 29.1916	Val Loss: 1.0799			best_ep 9	best_it 42900	best_psnr 29.2914
+Ep 9 it 44400  	PSNR: 29.1720	Val Loss: 1.0673			best_ep 9	best_it 42900	best_psnr 29.2914
+Ep 9 it 44700  	PSNR: 29.2245	Val Loss: 1.0676			best_ep 9	best_it 42900	best_psnr 29.2914
+Ep 9 it 45000  	PSNR: 29.1796	Val Loss: 1.0853			best_ep 9	best_it 42900	best_psnr 29.2914
+-----------------
+Epoch: 9	Time: 3055.4472	LearningRate: 0.0001000
+-----------------
+Ep 10 it 45300  	PSNR: 29.0910	Val Loss: 1.0854			best_ep 9	best_it 42900	best_psnr 29.2914
+Ep 10 it 45600  	PSNR: 29.2458	Val Loss: 1.0607			best_ep 9	best_it 42900	best_psnr 29.2914
+Ep 10 it 45900  	PSNR: 29.0552	Val Loss: 1.0953			best_ep 9	best_it 42900	best_psnr 29.2914
+Ep 10 it 46200  	PSNR: 28.8780	Val Loss: 1.0853			best_ep 9	best_it 42900	best_psnr 29.2914
+Ep 10 it 46500  	PSNR: 29.1726	Val Loss: 1.0572			best_ep 9	best_it 42900	best_psnr 29.2914
+Ep 10 it 46800  	PSNR: 29.1425	Val Loss: 1.0634			best_ep 9	best_it 42900	best_psnr 29.2914
+Ep 10 it 47100  	PSNR: 29.2394	Val Loss: 1.0583			best_ep 9	best_it 42900	best_psnr 29.2914
+Ep 10 it 47400  	PSNR: 29.2005	Val Loss: 1.0694			best_ep 9	best_it 42900	best_psnr 29.2914
+Ep 10 it 47700  	PSNR: 29.1548	Val Loss: 1.0875			best_ep 9	best_it 42900	best_psnr 29.2914
+Ep 10 it 48000  	PSNR: 29.2105	Val Loss: 1.0634			best_ep 9	best_it 42900	best_psnr 29.2914
+Ep 10 it 48300  	PSNR: 29.2244	Val Loss: 1.0592			best_ep 9	best_it 42900	best_psnr 29.2914
+Ep 10 it 48600  	PSNR: 29.1593	Val Loss: 1.0908			best_ep 9	best_it 42900	best_psnr 29.2914
+Ep 10 it 48900  	PSNR: 29.1475	Val Loss: 1.0714			best_ep 9	best_it 42900	best_psnr 29.2914
+Ep 10 it 49200  	PSNR: 29.2581	Val Loss: 1.0615			best_ep 9	best_it 42900	best_psnr 29.2914
+Ep 10 it 49500  	PSNR: 29.2129	Val Loss: 1.0758			best_ep 9	best_it 42900	best_psnr 29.2914
+Ep 10 it 49800  	PSNR: 29.1007	Val Loss: 1.0987			best_ep 9	best_it 42900	best_psnr 29.2914
+-----------------
+Epoch: 10	Time: 3015.7082	LearningRate: 0.0001000
+-----------------
+Ep 11 it 50100  	PSNR: 29.1728	Val Loss: 1.0759			best_ep 9	best_it 42900	best_psnr 29.2914
+Ep 11 it 50400  	PSNR: 29.1667	Val Loss: 1.0817			best_ep 9	best_it 42900	best_psnr 29.2914
+Ep 11 it 50700  	PSNR: 29.2305	Val Loss: 1.0765			best_ep 9	best_it 42900	best_psnr 29.2914
+Ep 11 it 51000  	PSNR: 29.1991	Val Loss: 1.0705			best_ep 9	best_it 42900	best_psnr 29.2914
+Ep 11 it 51300  	PSNR: 29.2101	Val Loss: 1.0575			best_ep 9	best_it 42900	best_psnr 29.2914
+Ep 11 it 51600  	PSNR: 29.1685	Val Loss: 1.0708			best_ep 9	best_it 42900	best_psnr 29.2914
+Ep 11 it 51900  	PSNR: 29.2015	Val Loss: 1.0631			best_ep 9	best_it 42900	best_psnr 29.2914
+Ep 11 it 52200  	PSNR: 29.1700	Val Loss: 1.0777			best_ep 9	best_it 42900	best_psnr 29.2914
+Ep 11 it 52500  	PSNR: 29.2499	Val Loss: 1.0632			best_ep 9	best_it 42900	best_psnr 29.2914
+Ep 11 it 52800  	PSNR: 29.1222	Val Loss: 1.1113			best_ep 9	best_it 42900	best_psnr 29.2914
+Ep 11 it 53100  	PSNR: 29.2435	Val Loss: 1.0722			best_ep 9	best_it 42900	best_psnr 29.2914
+Ep 11 it 53400  	PSNR: 29.1652	Val Loss: 1.0595			best_ep 9	best_it 42900	best_psnr 29.2914
+Ep 11 it 53700  	PSNR: 29.1749	Val Loss: 1.0834			best_ep 9	best_it 42900	best_psnr 29.2914
+Ep 11 it 54000  	PSNR: 29.2505	Val Loss: 1.0620			best_ep 9	best_it 42900	best_psnr 29.2914
+Ep 11 it 54300  	PSNR: 29.2219	Val Loss: 1.0607			best_ep 9	best_it 42900	best_psnr 29.2914
+Ep 11 it 54600  	PSNR: 29.1843	Val Loss: 1.0708			best_ep 9	best_it 42900	best_psnr 29.2914
+Ep 11 it 54900  	PSNR: 29.2525	Val Loss: 1.0649			best_ep 9	best_it 42900	best_psnr 29.2914
+-----------------
+Epoch: 11	Time: 3035.9705	LearningRate: 0.0001000
+-----------------
+Ep 12 it 55200  	PSNR: 29.1857	Val Loss: 1.0729			best_ep 9	best_it 42900	best_psnr 29.2914
+Ep 12 it 55500  	PSNR: 29.3228	Val Loss: 1.0515			best_ep 12	best_it 55500	best_psnr 29.3228
+Ep 12 it 55800  	PSNR: 29.2078	Val Loss: 1.0682			best_ep 12	best_it 55500	best_psnr 29.3228
+Ep 12 it 56100  	PSNR: 29.1839	Val Loss: 1.0777			best_ep 12	best_it 55500	best_psnr 29.3228
+Ep 12 it 56400  	PSNR: 29.1032	Val Loss: 1.0869			best_ep 12	best_it 55500	best_psnr 29.3228
+Ep 12 it 56700  	PSNR: 29.1977	Val Loss: 1.0735			best_ep 12	best_it 55500	best_psnr 29.3228
+Ep 12 it 57000  	PSNR: 29.2428	Val Loss: 1.0675			best_ep 12	best_it 55500	best_psnr 29.3228
+Ep 12 it 57300  	PSNR: 29.2437	Val Loss: 1.0837			best_ep 12	best_it 55500	best_psnr 29.3228
+Ep 12 it 57600  	PSNR: 29.1727	Val Loss: 1.0854			best_ep 12	best_it 55500	best_psnr 29.3228
+Ep 12 it 57900  	PSNR: 29.1508	Val Loss: 1.0854			best_ep 12	best_it 55500	best_psnr 29.3228
+Ep 12 it 58200  	PSNR: 29.3390	Val Loss: 1.0526			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 12 it 58500  	PSNR: 29.1708	Val Loss: 1.0929			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 12 it 58800  	PSNR: 29.1226	Val Loss: 1.0880			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 12 it 59100  	PSNR: 29.1320	Val Loss: 1.0786			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 12 it 59400  	PSNR: 29.1042	Val Loss: 1.0949			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 12 it 59700  	PSNR: 29.1375	Val Loss: 1.0757			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 12 it 60000  	PSNR: 29.1477	Val Loss: 1.0934			best_ep 12	best_it 58200	best_psnr 29.3390
+-----------------
+Epoch: 12	Time: 3049.6763	LearningRate: 0.0001000
+-----------------
+Ep 13 it 60300  	PSNR: 29.1515	Val Loss: 1.0691			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 13 it 60600  	PSNR: 29.1242	Val Loss: 1.0780			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 13 it 60900  	PSNR: 29.1710	Val Loss: 1.0872			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 13 it 61200  	PSNR: 29.1133	Val Loss: 1.0790			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 13 it 61500  	PSNR: 29.2320	Val Loss: 1.0572			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 13 it 61800  	PSNR: 29.1638	Val Loss: 1.0718			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 13 it 62100  	PSNR: 29.1727	Val Loss: 1.0821			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 13 it 62400  	PSNR: 29.0927	Val Loss: 1.0793			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 13 it 62700  	PSNR: 29.2274	Val Loss: 1.0410			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 13 it 63000  	PSNR: 29.1278	Val Loss: 1.0839			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 13 it 63300  	PSNR: 29.1619	Val Loss: 1.0730			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 13 it 63600  	PSNR: 29.1058	Val Loss: 1.0817			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 13 it 63900  	PSNR: 29.1958	Val Loss: 1.0685			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 13 it 64200  	PSNR: 29.0778	Val Loss: 1.0745			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 13 it 64500  	PSNR: 29.2443	Val Loss: 1.0592			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 13 it 64800  	PSNR: 29.1659	Val Loss: 1.0535			best_ep 12	best_it 58200	best_psnr 29.3390
+-----------------
+Epoch: 13	Time: 3014.4215	LearningRate: 0.0001000
+-----------------
+Ep 14 it 65100  	PSNR: 29.2049	Val Loss: 1.0563			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 14 it 65400  	PSNR: 29.1354	Val Loss: 1.0696			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 14 it 65700  	PSNR: 29.2489	Val Loss: 1.0600			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 14 it 66000  	PSNR: 29.1307	Val Loss: 1.0631			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 14 it 66300  	PSNR: 29.0356	Val Loss: 1.0893			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 14 it 66600  	PSNR: 29.3029	Val Loss: 1.0439			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 14 it 66900  	PSNR: 29.1785	Val Loss: 1.0544			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 14 it 67200  	PSNR: 29.1160	Val Loss: 1.0720			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 14 it 67500  	PSNR: 29.2395	Val Loss: 1.0641			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 14 it 67800  	PSNR: 29.2535	Val Loss: 1.0510			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 14 it 68100  	PSNR: 29.2093	Val Loss: 1.0508			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 14 it 68400  	PSNR: 29.0900	Val Loss: 1.0906			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 14 it 68700  	PSNR: 29.0993	Val Loss: 1.1087			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 14 it 69000  	PSNR: 29.2603	Val Loss: 1.0620			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 14 it 69300  	PSNR: 29.2748	Val Loss: 1.0418			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 14 it 69600  	PSNR: 29.2311	Val Loss: 1.0666			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 14 it 69900  	PSNR: 29.0964	Val Loss: 1.0710			best_ep 12	best_it 58200	best_psnr 29.3390
+-----------------
+Epoch: 14	Time: 3041.5430	LearningRate: 0.0001000
+-----------------
+Ep 15 it 70200  	PSNR: 29.1817	Val Loss: 1.0753			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 15 it 70500  	PSNR: 29.1524	Val Loss: 1.0659			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 15 it 70800  	PSNR: 29.1605	Val Loss: 1.0724			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 15 it 71100  	PSNR: 29.1465	Val Loss: 1.0712			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 15 it 71400  	PSNR: 29.1833	Val Loss: 1.0735			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 15 it 71700  	PSNR: 29.1338	Val Loss: 1.0652			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 15 it 72000  	PSNR: 29.1326	Val Loss: 1.0701			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 15 it 72300  	PSNR: 29.1722	Val Loss: 1.0771			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 15 it 72600  	PSNR: 29.0270	Val Loss: 1.0793			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 15 it 72900  	PSNR: 29.2270	Val Loss: 1.0585			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 15 it 73200  	PSNR: 29.0803	Val Loss: 1.0975			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 15 it 73500  	PSNR: 29.2313	Val Loss: 1.0408			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 15 it 73800  	PSNR: 29.1401	Val Loss: 1.0823			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 15 it 74100  	PSNR: 29.1987	Val Loss: 1.0516			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 15 it 74400  	PSNR: 29.1386	Val Loss: 1.0740			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 15 it 74700  	PSNR: 29.0970	Val Loss: 1.0809			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 15 it 75000  	PSNR: 29.2174	Val Loss: 1.0520			best_ep 12	best_it 58200	best_psnr 29.3390
+-----------------
+Epoch: 15	Time: 3039.1669	LearningRate: 0.0000500
+-----------------
+Ep 16 it 75300  	PSNR: 29.0495	Val Loss: 1.0714			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 16 it 75600  	PSNR: 29.1966	Val Loss: 1.0550			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 16 it 75900  	PSNR: 29.1247	Val Loss: 1.0405			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 16 it 76200  	PSNR: 29.1047	Val Loss: 1.0592			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 16 it 76500  	PSNR: 29.1293	Val Loss: 1.0434			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 16 it 76800  	PSNR: 29.1094	Val Loss: 1.0578			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 16 it 77100  	PSNR: 29.0018	Val Loss: 1.0810			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 16 it 77400  	PSNR: 29.1686	Val Loss: 1.0432			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 16 it 77700  	PSNR: 29.0692	Val Loss: 1.0541			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 16 it 78000  	PSNR: 29.0950	Val Loss: 1.0578			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 16 it 78300  	PSNR: 29.0846	Val Loss: 1.0595			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 16 it 78600  	PSNR: 29.0162	Val Loss: 1.0724			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 16 it 78900  	PSNR: 29.0187	Val Loss: 1.0594			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 16 it 79200  	PSNR: 29.0260	Val Loss: 1.0663			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 16 it 79500  	PSNR: 29.1029	Val Loss: 1.0322			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 16 it 79800  	PSNR: 29.0665	Val Loss: 1.0468			best_ep 12	best_it 58200	best_psnr 29.3390
+-----------------
+Epoch: 16	Time: 3019.3656	LearningRate: 0.0000500
+-----------------
+Ep 17 it 80100  	PSNR: 29.0582	Val Loss: 1.0641			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 17 it 80400  	PSNR: 29.0778	Val Loss: 1.0556			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 17 it 80700  	PSNR: 29.0201	Val Loss: 1.0657			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 17 it 81000  	PSNR: 29.0006	Val Loss: 1.0698			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 17 it 81300  	PSNR: 28.9659	Val Loss: 1.0577			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 17 it 81600  	PSNR: 29.0458	Val Loss: 1.0606			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 17 it 81900  	PSNR: 28.9975	Val Loss: 1.0521			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 17 it 82200  	PSNR: 29.1109	Val Loss: 1.0681			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 17 it 82500  	PSNR: 29.0220	Val Loss: 1.0624			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 17 it 82800  	PSNR: 29.0260	Val Loss: 1.0462			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 17 it 83100  	PSNR: 29.0409	Val Loss: 1.0501			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 17 it 83400  	PSNR: 28.9776	Val Loss: 1.0716			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 17 it 83700  	PSNR: 28.9996	Val Loss: 1.0651			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 17 it 84000  	PSNR: 29.0585	Val Loss: 1.0364			best_ep 12	best_it 58200	best_psnr 29.3390
+Ep 17 it 84300  	PSNR: 29.0494	Val Loss: 1.0473			best_ep 12	best_it 58200	best_psnr 29.3390
